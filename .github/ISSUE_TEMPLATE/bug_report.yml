@@ -1,6 +1,5 @@
 name: Bug report
 description: Create a report to help us improve
-title: ""
 labels: [bug]
 body:
   - type: input
@@ -17,17 +16,17 @@ body:
       options:
         - label: I did a "hard refresh", but it's still busted.
           required: true
-  - type: markdown
+  - type: textarea
     attributes:
       label: What happened (e.g., it crashed)?
     validations:
       required: true
-  - type: markdown
+  - type: textarea
     attributes:
       label: Expected behavior (e.g., it shouldn't crash)
     validations:
       required: true
-  - type: markdown
+  - type: textarea
     attributes:
       label: Steps to reproduce
     validations:
