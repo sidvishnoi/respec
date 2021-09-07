@@ -1,0 +1,34 @@
+name: Bug report
+description: Create a report to help us improve
+title: ""
+labels: [bug]
+body:
+  - type: input
+    attributes:
+      label: URL to affected spec
+      placeholder: 'https://w3c.github.io/manifest/'
+  - type: input
+    attributes:
+      label: ReSpec version
+      description: Click the ReSpec pill in top-right corner
+      placeholder: 26.13.4
+  - type: checkboxes
+    attributes:
+      options:
+        - label: I did a "hard refresh", but it's still busted.
+          required: true
+  - type: markdown
+    attributes:
+      label: What happened (e.g., it crashed)?
+    validations:
+      required: true
+  - type: markdown
+    attributes:
+      label: Expected behavior (e.g., it shouldn't crash)
+    validations:
+      required: true
+  - type: markdown
+    attributes:
+      label: Steps to reproduce
+    validations:
+      required: false
