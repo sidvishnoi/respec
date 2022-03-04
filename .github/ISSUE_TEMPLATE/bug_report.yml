@@ -13,6 +13,7 @@ body:
       placeholder: 26.13.4
   - type: checkboxes
     attributes:
+      label: Checks
       options:
         - label: I did a "hard refresh", but it's still busted.
           required: true
